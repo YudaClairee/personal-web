@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: "Cascadia Code", sans-serif;
+  }
+
+  body {
+    @apply bg-zinc-900 text-zinc-100;
+  }
+}
+
+@layer components {
+}
