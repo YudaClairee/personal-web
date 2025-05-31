@@ -13,21 +13,23 @@
     />
   </head>
   <body>
-    <main class="max-w-5xl m-auto space-y-10">
-      <header class="flex justify-between py-10">
+    <main class="max-w-5xl m-auto space-y-10 px-4 md:px-6">
+      <header
+        class="flex flex-col sm:flex-row justify-between py-6 sm:py-10 gap-4 sm:gap-0"
+      >
         <h1
-          class="font-['Onest'] text-3xl text-transparent font-bold bg-gradient-to-r from-rose-600 to-red-100 bg-clip-text"
+          class="font-['Onest'] text-2xl sm:text-3xl text-transparent font-bold bg-gradient-to-r from-rose-600 to-red-100 bg-clip-text"
         >
           Djibyudaaa
         </h1>
-        <nav class="flex gap-6">
-          <a href="#">About</a>
-          <a href="#">Connect</a>
-          <a href="#">Portfolio</a>
+        <nav class="flex gap-4 sm:gap-6">
+          <a class="text-xl" href="#about">About</a>
+          <a class="text-xl" href="#connect">Connect</a>
+          <a class="text-xl" href="#portfolio">Portfolio</a>
         </nav>
       </header>
 
-      <section class="space-y-2">
+      <section id="about" class="space-y-2">
         <img src="src/asset/profile.jpg" class="h-30 w-30 rounded-lg" alt="" />
         <h3 class="text-2xl font-bold">
           Hello, I am
@@ -107,13 +109,15 @@
         </div>
       </section>
 
-      <section class="flex flex-col space-y-10">
+      <section id="connect" class="flex flex-col space-y-10">
         <h3
           class="font-['Onest'] text-3xl font-bold drop-shadow-[0_0_10px_rgba(210,12,0,0.7)] text-white"
         >
           Social Media
         </h3>
-        <div class="flex justify-center gap-8">
+        <div
+          class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-8"
+        >
           <div
             class="bg-zinc-400 p-3 rounded-lg hover:bg-zinc-900 group flex flex-col items-center space-y-3 transition duration-150"
           >
@@ -124,7 +128,11 @@
                 alt=""
               />
             </a>
-            <p>Djibrani Yuda Febriansyah</p>
+            <p
+              class="text-zinc-800 group-hover:text-zinc-300 text-xs sm:text-base"
+            >
+              Djibrani Yuda Febriansyah
+            </p>
           </div>
           <div
             class="bg-zinc-400 p-3 rounded-lg hover:bg-zinc-900 group flex flex-col items-center space-y-3 transition duration-150"
@@ -136,7 +144,7 @@
                 alt=""
               />
             </a>
-            <p>YudaClairee</p>
+            <p class="text-zinc-800 group-hover:text-zinc-300">YudaClairee</p>
           </div>
           <div
             class="bg-zinc-400 p-3 rounded-lg hover:bg-zinc-900 group flex flex-col items-center space-y-3 transition duration-150"
@@ -148,7 +156,7 @@
                 alt=""
               />
             </a>
-            <p>@djibyudaaa</p>
+            <p class="text-zinc-800 group-hover:text-zinc-300">@djibyudaaa</p>
           </div>
           <div
             class="bg-zinc-400 p-3 rounded-lg hover:bg-zinc-900 group flex flex-col items-center space-y-3 transition duration-150"
@@ -164,7 +172,65 @@
           </div>
         </div>
       </section>
+
+      <section id="portfolio" class="flex flex-col gap-4 mb-8">
+        <h3
+          class="font-['Onest'] text-3xl font-bold drop-shadow-[0_0_10px_rgba(210,12,0,0.7)] text-white"
+        >
+          Portfolio
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-zinc-400 p-4 rounded-md hover:scale-105 transition duration-150"
+          >
+            <img class="rounded w-full" src="src/asset/digivathon.jpg" alt="" />
+            <h3
+              class="font-bold font-['Onest'] text-2xl drop-shadow-[0_0_10px_rgba(0,198,0,0.9)] text-zinc-800"
+            >
+              Digivathon
+            </h3>
+            <p class="text-sm text-zinc-700">
+              Digivathon is a Business Case Competition for College Student held
+              by DIGNITY (Digital Business Student Unity) UPI
+            </p>
+          </div>
+          <div
+            class="bg-zinc-400 p-4 rounded-md hover:scale-105 transition duration-150"
+          >
+            <img class="rounded" src="src/asset/syukurin.png" alt="" />
+            <h3
+              class="font-bold font-['Onest'] text-2xl drop-shadow-[0_0_10px_rgba(0,150,20,0.9)] text-zinc-800"
+            >
+              Syukurin
+            </h3>
+            <p class="text-sm text-zinc-700">
+              Syukurin is a digital platform for someone to buy animal for
+              qurban
+            </p>
+          </div>
+          <div
+            class="bg-zinc-400 p-4 rounded-md hover:scale-105 transition duration-150"
+          >
+            <img class="rounded" src="src/asset/dleath.jpg" alt="" />
+            <h3
+              class="font-bold font-['Onest'] text-2xl drop-shadow-[0_0_10px_rgba(150,75,0,0.9)] text-zinc-800"
+            >
+              D'Leath
+            </h3>
+            <p class="text-sm text-zinc-700">
+              D'Leath is a leather brand from Garut, West Java that deliver the
+              authenticity of Domba Garut
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <div
+      class="bg-rose-700 w-full h-15 flex justify-center items-center font-semibold"
+    >
+      <p>Made by Djibyudaa with Love</p>
+    </div>
 
     <script src="dist/main.js"></script>
   </body>
